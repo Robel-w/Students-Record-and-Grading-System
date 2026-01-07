@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <algorithm>
+using namespace std;
 
 bool GradeSystem::addStudent(int studentID, const std::string& studentName) {
     if (students.find(studentID) != students.end()) {
