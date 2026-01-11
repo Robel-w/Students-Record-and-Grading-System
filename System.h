@@ -15,30 +15,30 @@ struct Edge {
 
 struct Student {
     int id;
-    std::string name;
+    string name;
     double gpa;
-    std::vector<Edge> enrollments; 
+    vector<Edge> enrollments; 
     
-    Student(int studentID = 0, const std::string& studentName = "") 
+    Student(int studentID = 0, const string& studentName = "") 
         : id(studentID), name(studentName), gpa(0.0) {}
 };
 
 struct Course {
     int id;
-    std::string name;
+    string name;
     
-    Course(int courseID = 0, const std::string& courseName = "") 
+    Course(int courseID = 0, const string& courseName = "") 
         : id(courseID), name(courseName) {}
 };
 
 class GradeSystem {
 private:
-    std::unordered_map<int, Student> students;
+    unordered_map<int, Student> students;
     
-    std::unordered_map<int, Course> courses;
+    unordered_map<int, Course> courses;
     
-    void merge(std::vector<Student>& arr, int left, int mid, int right);
-    void mergeSortHelper(std::vector<Student>& arr, int left, int right);
+    void merge(vector<Student>& arr, int left, int mid, int right);
+    void mergeSortHelper(vector<Student>& arr, int left, int right);
 
 public:
     bool addStudent(int studentID, const std::string& studentName);
