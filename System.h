@@ -41,8 +41,8 @@ private:
     void mergeSortHelper(vector<Student>& arr, int left, int right);
 
 public:
-    bool addStudent(int studentID, const std::string& studentName);
-    bool addCourse(int courseID, const std::string& courseName);
+    bool addStudent(int studentID, const string& studentName);
+    bool addCourse(int courseID, const string& courseName);
     
     bool enroll(int studentID, int courseID);
     
